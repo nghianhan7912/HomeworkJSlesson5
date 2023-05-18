@@ -36,6 +36,10 @@ document.getElementById("btn").onclick = function(){
     }
 }
 // Bài 2
+function jsUcfirst(string) 
+{
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 function electricityBill(kw){
     var money;
     if (kw <= 50){
@@ -51,12 +55,9 @@ function electricityBill(kw){
     }
     return money;
 }
-function jsUcfirst(string) 
-{
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
 document.getElementById("btn2").onclick = function(){
     var name = document.getElementById("name").value;
+    name = jsUcfirst(name);
     var kw = document.getElementById("kw").value;
     document.getElementById("text2").innerHTML = "Chủ hộ: " + name + "<br/>" + " Số tiền điện cần thanh toán là: " + electricityBill(kw).toLocaleString() +" VND";
 }
@@ -81,7 +82,7 @@ document.getElementById("btn3").onclick = function(){
     var dependentPerson = document.getElementById("dependentPerson").value*1;
     var money = totalIncome - 4e+6 - (dependentPerson * 16e+5);
     var money1 = money * taxBill();
-    document.getElementById("text3").innerHTML ="Xin chào " + name + ".Thuế xuất tính theo thu nhập 1 năm của bạn là: " + taxBill() +"%" + " Số tiền thuế bạn cần phải đóng là: " + money1.toLocaleString()
+    document.getElementById("text3").innerHTML ="Xin chào " + name + ".Thuế xuất tính theo thu nhập 1 năm của bạn là: " + (taxBill()*100) +"%" + " Số tiền thuế bạn cần phải đóng là: " + money1.toLocaleString()
 }
 // Bài 4
 function changeClientType(){
