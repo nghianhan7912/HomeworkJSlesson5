@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeworkJsLesson5</title>
+    <!-- BOOTSTRAP 5  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <!-- MY CSS  -->
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <div class="content">
+        <h1>Homework JS session 15</h1>
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <!-- Bài tập 1  -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Bài tập 1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-12 col-md-4 col-lg-2">
+                                    <input class="bg" id="point" type="text" placeholder="Điểm chuẩn" />
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <select class="bg2" name="" id="area">
+                                        <option>Chọn khu vực</option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <select class="bg2" name="" id="object">
+                                        <option>Chọn đối tượng</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <input class="bg" id="sub1" type="text" placeholder="Điểm môn 1" />
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <input class="bg" id="sub2" type="text" placeholder="Điểm môn 2" />
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <input class="bg" id="sub3" type="text" placeholder="Điểm môn 3" />
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn" id="btn">Kết quả</button>
+                                </div>
+                            </div>
+                            <p class="text" id="text"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bài tập 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Bài tập 2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <input class="bg" id="name" type="text" placeholder="Nhập tên chủ hộ" />
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <input class="bg" id="kw" type="text" placeholder="Nhập số kw sử dụng" />
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn" id="btn2">Tính tiền điện</button>
+                                </div>
+                            </div>
+                            <p class="text" id="text2"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bài tập 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Bài tập 3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <input class="bg" id="name2" type="text" placeholder="Họ tên" />
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <input class="bg" id="totalIncome" type="text" placeholder="Tổng thu nhập năm" />
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <input class="bg" id="dependentPerson" type="text" placeholder="Số người phụ thuộc" />
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn" id="btn3">Tra cứu thuế</button>
+                                </div>
+                            </div>
+                            <p class="text" id="text3"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bài tập 4  -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Bài tập 4
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <input id="numClient" class="bg" type="text" placeholder="Mã khách hàng">
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <select class="bg2" name="" id="clientType">
+                                        <option selected>Loại khách hàng</option>
+                                        <option value="house">Nhà dân</option>
+                                        <option value="company">Doanh nghiệp</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <input id="numPerChannel" class="bg" type="text" placeholder="Số kênh cao cấp">
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-1">
+                                    <input id="connectNumber" class="bg" type="text" placeholder="Số kết nối">
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn" id="btn4">Tính tiền</button>
+                                </div>
+                            </div>
+                            <p class="text" id="text4"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BOOTSTRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- MY JS  -->
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: pink;
+    /* background-color: gray; */
+    margin-bottom: 50px;
+}
+.container{
+    margin: auto;
+}
+body{
+    background-image: url(./img/hinh-anh-background-bo-bien-dat-dao_034910160.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.accordion-item{
+    background-image: url(./img/100-background-dep-nhat_035041990.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.accordion-button{
+    background-image: url(./img/hinh-anh-background-bau-troi-galaxy_034910035.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(234, 101, 39);
+}
+.accordion-button:not(.collapsed){
+    color: rgb(234, 101, 39);
+}
+.bg{
+    border: 1px solid #ecf0f3;
+    padding: 5px 0 5px 10px;
+    border-radius: 10px;
+    background-color: #ecf0f3;
+}
+.bg2{
+    border: 1px solid #ecf0f3;
+    width: 190px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #ecf0f3;
+}
+.btn{
+    border: 1px solid rgb(223, 101, 219);
+    margin-top: 20px;
+    padding: 7px 30px;
+    border-radius: 20px;
+    background-color: rgb(223, 101, 219);
+    color: white;
+    margin-bottom: 15px;
+}
+.text{
+    color: rgb(227, 81, 81);
+    font-size: 1rem;
+}
+#connectNumber{
+    display: none;
+}
