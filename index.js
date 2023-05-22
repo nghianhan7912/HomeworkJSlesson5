@@ -82,7 +82,7 @@ document.getElementById("btn3").onclick = function(){
     var dependentPerson = document.getElementById("dependentPerson").value*1;
     var money = totalIncome - 4e+6 - (dependentPerson * 16e+5);
     var money1 = money * taxBill();
-    document.getElementById("text3").innerHTML ="Xin chào " + name + ".Thuế xuất tính theo thu nhập 1 năm của bạn là: " + (taxBill()*100) +"%" + " Số tiền thuế bạn cần phải đóng là: " + money1.toLocaleString()
+    document.getElementById("text3").innerHTML ="Xin chào " + name + ".Thuế xuất tính theo thu nhập 1 năm của bạn là: " + (taxBill()*100) +"%" + " Số tiền thuế bạn cần phải đóng là: " + money1.toLocaleString() +" VND"
 }
 // Bài 4
 function changeClientType(){
@@ -95,25 +95,6 @@ function changeClientType(){
     return
 }
 document.getElementById("clientType").onchange = changeClientType;
-function moneyBill(){
-    // var option = document.getElementById("clientType").value;
-    // var connectNumber = document.getElementById("connectNumber").value*1;
-    // var bill, basic, high,money;
-    // if (option==="house"){
-    //     bill = 4.5;
-    //     basic = 20.5;
-    //     high = 7.5;
-    // } else if(option==="company"){
-    //     bill = 15;
-    //     high = 50;
-    //     if(connectNumber<=10){
-    //         basic = 75;
-    //     } else{
-    //         basic = 75 + ((connectNumber - 10)*5);
-    //     }
-    // }
-    return
-}
 document.getElementById("btn4").onclick = function(){
     var numPerChannel = document.getElementById("numPerChannel").value*1;
     var connectNumber = document.getElementById("connectNumber").value*1;
