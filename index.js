@@ -36,6 +36,15 @@ document.getElementById("btn").onclick = function(){
     }
 }
 // Bài 2
+// Input
+// + Tên, số kw
+// Process
+// B1:Tạo hàm xử lý tính và xuất tiền điện phải trả
+// B2:Tạo sự kiện cho nút button
+// B3:DOM tới giá trị lấy value name và số kw
+// B4:Tạo phương thức xuất tên chủ hộ và số tiền điện phải trả
+// Output
+// +Xuất tên chủ hộ và số tiền điện phải trả
 function jsUcfirst(string) 
 {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -62,12 +71,21 @@ document.getElementById("btn2").onclick = function(){
     document.getElementById("text2").innerHTML = "Chủ hộ: " + name + "<br/>" + " Số tiền điện cần thanh toán là: " + electricityBill(kw).toLocaleString() +" VND";
 }
 //Bài 3
+// Input
+// + Họ tên , tổng thu nhập năm , số người phụ thuộc
+// Process
+// B1: Tạo hàm xử lý tính thu nhập chịu thuế và trả về % thuế suất phải chịu
+// B2: Tạo sự kiện cho nút button
+// B3: Dom tới lấy value của họ tên , tổng thu nhập năm và số người phụ thuộc
+// B4: Tính số tiền thuế phải trả theo quy định đề bài
+// Output
+// +Xuất thuế thu nhập cá nhân phải trả
 function taxBill(){
     debugger
     var totalIncome = document.getElementById("totalIncome").value*1;
     var dependentPerson = document.getElementById("dependentPerson").value*1;
     var money = totalIncome - 4e+6 - (dependentPerson * 16e+5);
-    if(money<=60e+6) return 0.05;
+    if(money<=60e+6) return 0.05;  
     if(money<=120e+6) return 0.1;
     if(money<=210e+6) return 0.15;
     if(money<=384e+6) return 0.2;
@@ -85,6 +103,14 @@ document.getElementById("btn3").onclick = function(){
     document.getElementById("text3").innerHTML ="Xin chào " + name + ".Thuế xuất tính theo thu nhập 1 năm của bạn là: " + (taxBill()*100) +"%" + " Số tiền thuế bạn cần phải đóng là: " + money1.toLocaleString() +" VND"
 }
 // Bài 4
+//Input
+//+Phí xử lý hoá đơn, Phí dịch vụ cơ bản, Phí thuê kênh cao cấp,Mã khách hàng, loại khách hàng, số kết nối, số kênh cao cấp.
+//Process
+//B1:Tạo hàm xử lý ẩn hiện ô nhập số kết nối tuỳ vào đối tượng là house hay company
+//B2:Dom lấy giá trị value của Mã khách hàng, loại khách hàng, số kết nối, số kênh cao cấp.
+//B3:Tính số tiền cáp cần thanh toán theo 2 lựa chọn của value loại khách hàng
+//Output
+//+Hóa đơn khách hàng cần thanh toán cho công ty cáp 
 function changeClientType(){
     var option = document.getElementById("clientType").value;
     if(option === "house"){
